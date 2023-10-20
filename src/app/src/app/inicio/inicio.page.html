@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button style="color:#00ff40;"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="centrado">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<body>
+  <div class="centrado">
+    <div class="wrapper">
+      <h1 style="color:#cecbcb;" *ngIf="usuario">
+        Bienvenido, {{usuario.nombre}}
+        <br><br>
+      </h1>
+
+      <button class="btn" [routerLink]="['/scan-qr']" style="color: #00ff40;">
+        Escanear QR
+      </button>
+
+      <ion-content>
+        <!-- Contenido de tu página de inicio -->
+        <button (click)="verificarAPI()">Verificar API</button>
+      </ion-content>
+      
+    </div>
+  </div>
+</body>
+
