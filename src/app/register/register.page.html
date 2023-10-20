@@ -26,17 +26,18 @@
 
         <div class="input-box">
           <input formControlName="rut" type="text" id="rut" placeholder="RUT" required>
-          <!-- Agrega un ícono apropiado para el campo RUT -->
         </div>
 
         <div class="input-box">
-          <input formControlName="region" type="text" id="region" placeholder="Región" required>
-          <!-- Agrega un ícono apropiado para el campo Región -->
+              <ion-select formControlName="region" id="region" label="Región" placeholder="Selecciona una Región">
+              <ion-select-option value="apple">1</ion-select-option>
+              <ion-select-option value="banana">2</ion-select-option>
+              <ion-select-option value="orange">3</ion-select-option>
+            </ion-select>
         </div>
 
         <div class="input-box">
           <input formControlName="comuna" type="text" id="comuna" placeholder="Comuna" required>
-          <!-- Agrega un ícono apropiado para el campo Comuna -->
         </div>
 
         <div class="input-box">

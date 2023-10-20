@@ -7,7 +7,7 @@ import { AlertController, NavController } from '@ionic/angular';
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
 })
-export class RegisterPage implements OnInit {
+export class RegisterPage{
   formularioRegistro: FormGroup;
 
   constructor(public fb: FormBuilder, public alertController: AlertController, public navCtrl: NavController) {
@@ -63,5 +63,4 @@ export class RegisterPage implements OnInit {
     this.navCtrl.navigateRoot('login');
   }
 
-  ngOnInit() {}
 }

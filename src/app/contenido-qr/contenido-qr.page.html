@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>contenido-qr</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<body>
+  <div class="centrado">
+    <div class="wrapper">
+      <!-- Mostrar el contenido del código QR escaneado -->
+      <div style="color:#cecbcb;" *ngIf="qrContent">
+        <p>
+          <br>
+          <b>Contenido del código QR:</b>
+          <br><br>
+          {{ qrContent }}
+        </p>
+      </div>
+    </div>
+  </div>
+</body>

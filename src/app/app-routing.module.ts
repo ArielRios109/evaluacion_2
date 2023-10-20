@@ -9,6 +9,32 @@ const routes: Routes = [
   },
   {
     path: 'login',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'register',
+    redirectTo: 'register',
+    pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'recuperar-pass',
+    redirectTo: 'recuperar-pass',
+    pathMatch: 'full'
+  },
+  {
+    path: 'contenido-qr',
+    redirectTo: 'contenido-qr',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
@@ -23,6 +49,11 @@ const routes: Routes = [
     path: 'recuperar-pass',
     loadChildren: () => import('./recuperar-pass/recuperar-pass.module').then( m => m.RecuperarPassPageModule)
   },
+  {
+    path: 'contenido-qr',
+    loadChildren: () => import('./contenido-qr/contenido-qr.module').then( m => m.ContenidoQrPageModule)
+  },
+
   
 ];
 
