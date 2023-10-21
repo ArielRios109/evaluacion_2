@@ -36,7 +36,7 @@
     "ngx-qrcode": "^0.1.0-rc.1",
     "rxjs": "^6.5.5",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.0",
