@@ -29,7 +29,7 @@
     "@capacitor/status-bar": "5.0.6",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/geolocation": "^5.36.0",
-    "@ionic/angular": "^7.0.0",
+    "@ionic/angular": "^7.5.2",
     "@zxing/library": "^0.20.0",
     "ionicons": "^7.0.0",
     "jsqr": "^1.4.0",
